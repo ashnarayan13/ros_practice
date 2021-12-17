@@ -1,0 +1,5 @@
+<launch>
+<node pkg="tf" type="static_transform_publisher" name="rear_center_broadcaster" args="0.05 -0.32 -0.63 0 0 0 1 imu_link rear_center 100" />
+<node pkg="tf" type="static_transform_publisher" name="front_center_broadcaster" args="2.76 -0.32 -0.63 0 0 0 1 imu_link front_center 100" />
+<node pkg="tf" type="static_transform_publisher" name="imu_yaw_rot" args="0 0 0 0.707 0 0 0.707 imu_link imu_rot 100" />
+</launch>
